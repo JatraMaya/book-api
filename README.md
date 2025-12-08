@@ -2,9 +2,13 @@
 
 ## How to use
 * install the necessary package / dependecies e.g fastapi sqlmodel etc
-```bash using uv
+
+- with uv
+```bash
+	$ cd book-api
 	$ uv sync
 ```
+-with pip
 ```bash using pip
 	$ cd book-api
 	$ python -m venv .venv
