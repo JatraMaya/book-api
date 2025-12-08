@@ -1,9 +1,7 @@
-# WELCOME TO BOOK API EXAMPLE WITH FASTAPI
+# RestAPI example project with FastAPI
 
-### HOW TO USE
-* After clone the project, copy the env_example file to .env
-````
+## How to use
 ```bash
-  $cp env_example .env
-
+	$ cp env_example .env
 ```
+
