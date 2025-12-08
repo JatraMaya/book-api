@@ -1,0 +1,19 @@
+DATABASE_URL= # FILL IT WITH YOUR DATABASE URL
+
+DEBUG=True
+
+API_TITLE= # YOUR API TITLE e.g. Awesome API
+
+API_VERSION= # YOUR API VERSION e.g. 1.0.0
+
+SECRET_KEY= # YOUR GENERATED SECRET KEY FOR JWT
+
+ACCESS_TOKEN_EXPIRE_MINUTES= # YOUR JWT EXPIRY TIME IN MINUTES e.g. 15
+
+ALGORITHM=  # YOUR ALGORITHM USED IN JWT e.g. HS256
+
+ALLOWED_HOSTS= # LIST OF YOUR ALLOWED HOSTS e.g https://someawesomesite.com,https://anothersite.com,https://justanothersite.co
+
+ADMIN_EMAIL= # YOUR ADMIN EMAIL FOR DEFAULT USER
+
+ADMIN_PASSWORD= # YOUR PASSWORD FOR THE DEFAULT ADMIN USER, Make sure for admin password to contain both alphanumeric and special character, minimum length of 6, it will be hashed when saving to db e.g. password1+ 
