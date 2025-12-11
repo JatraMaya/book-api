@@ -63,7 +63,8 @@ class BookService:
         success = self.book_repo.delete(book_id)
         if not success:
             raise HTTPException(status_code=404, detail="Book not found")
+        return {"yey": "yey"}
 
     def convert_for_response(self, book: Book) -> BookRead:
-        return BookRead.model_validate(book)
-        # return BookRead(id=book.id, title=book.title, author=book.author)
+        print(book)
+        return BookRead(id=book.id, title=book.title, author=book.author)
