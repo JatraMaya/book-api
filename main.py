@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
 from typing import Annotated
 from fastapi import Depends, FastAPI
+from core.utils import logger
 
 from routes.auth import router as AuthRouter
 from routes.author import (
@@ -24,7 +25,7 @@ settings = get_settings()
 async def lifespan(_: FastAPI):
     create_db_and_tables()
     yield
-    print("APP is shutdown")
+    logger.info("APP is shutdown")
 
 
 app = FastAPI(
