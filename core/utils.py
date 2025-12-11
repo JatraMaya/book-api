@@ -1,5 +1,6 @@
-from fastapi import HTTPException, status
 import jwt
+import logging
+from fastapi import HTTPException, status
 from datetime import timedelta, datetime, timezone
 from jwt.exceptions import ExpiredSignatureError, InvalidTokenError
 from pwdlib import PasswordHash
@@ -7,6 +8,13 @@ from pwdlib import PasswordHash
 from core.config import get_settings
 
 settings = get_settings()
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+
+
+logger = logging.getLogger(__name__)
 
 password_hash = PasswordHash.recommended()
 
