@@ -19,4 +19,21 @@
 ```bash
 	$ cp env_example .env
 ```
+* Fill up the the .env file with the required values
+* Run fastapi dev server
+```bash
+	$ fastapi dev
+```
+	or with uv
+```bash
+	$ uv run fastapi dev
+```
+
+## Auto generated openapi docs
+The API comes with the auto generate docs thanks to the great feature from fastapi itself, which can be access via localhost:8000/docs,
+<img width="3252" height="1486" alt="image" src="https://github.com/user-attachments/assets/da9c9aab-17d4-4f5b-8dd0-709a7512c598" />
+
+## Endpoint authorization
+Some endpoint is accesible only to admin user and can be access via authorization button on the openapi page, use the admin credential that was setup on .env files (e.g. admin email & password) 
+
 
